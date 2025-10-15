@@ -20,11 +20,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 25 25% 15%;
 
-    /* Primary - Sophisticated Red */
-    --primary: 0 72% 51%;
+    /* Primary - Sophisticated Red (More Vivid) */
+    --primary: 0 85% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 0 72% 45%;
-    --primary-light: 0 72% 60%;
+    --primary-hover: 0 90% 50%;
+    --primary-light: 0 85% 65%;
 
     /* Secondary - Deep Burgundy */
     --secondary: 0 45% 35%;

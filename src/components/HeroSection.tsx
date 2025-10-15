@@ -3,18 +3,18 @@ import { Instagram, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-doctor.jpg";
 const HeroSection = () => {
   return <section className="relative bg-gradient-hero min-h-screen flex items-center overflow-hidden">
-      <div className="container mx-auto px-4 py-16 md:py-24">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 py-12 md:py-20">
+        <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-8 animate-fade-in">
-            <div className="space-y-4">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight">
-                Mais do que estética.{" "}
-                <span className="text-primary">
-                  Eu devolvo autoestima, confiança e poder.
-                </span>
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground font-light leading-relaxed">
+          <div className="md:col-span-2 space-y-8 animate-fade-in">
+            <div className="space-y-6">
+              <div className="space-y-3">
+                <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-primary leading-tight tracking-tight">
+                  Dra Blenda Lobão
+                </h1>
+                <div className="h-1 w-24 bg-primary rounded-full"></div>
+              </div>
+              <p className="text-xl md:text-2xl text-foreground font-light leading-relaxed">
                 Atendimento humanizado e resultados naturais que realçam a sua beleza com harmonia e segurança.
               </p>
             </div>
@@ -46,15 +46,26 @@ const HeroSection = () => {
           </div>
 
           {/* Image */}
-          <div className="relative animate-scale-in">
-            <div className="relative rounded-2xl overflow-hidden shadow-elegant">
-              <img src={heroImage} alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em estética facial" className="w-full h-auto object-cover" />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent my-0 mx-0 px-[10px] py-[10px]"></div>
+          <div className="md:col-span-3 relative animate-scale-in">
+            <div className="relative">
+              {/* Main Image Container */}
+              <div className="relative rounded-3xl overflow-hidden shadow-elegant aspect-[4/5] md:aspect-[3/4]">
+                <img 
+                  src={heroImage} 
+                  alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em estética facial" 
+                  className="w-full h-full object-cover object-center"
+                  loading="eager"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent"></div>
+              </div>
+              
+              {/* Decorative Frame */}
+              <div className="absolute -inset-4 border-2 border-primary/20 rounded-3xl -z-10"></div>
+              
+              {/* Decorative Elements */}
+              <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-6 -left-6 w-40 h-40 bg-accent/20 rounded-full blur-3xl"></div>
             </div>
-            
-            {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
-            <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-primary/10 rounded-full blur-3xl"></div>
           </div>
         </div>
       </div>
