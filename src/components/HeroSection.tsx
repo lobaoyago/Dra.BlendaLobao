@@ -8,7 +8,7 @@ const HeroSection = () => {
           {/* Text Content */}
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-secondary leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight">
                 Mais do que estética.{" "}
                 <span className="text-primary">
                   Eu devolvo autoestima, confiança e poder.
@@ -39,7 +39,7 @@ const HeroSection = () => {
             {/* Credibility Badge */}
             <div className="pt-4 border-t border-border">
               <p className="text-sm text-muted-foreground font-medium">
-                <span className="text-secondary font-semibold">CRO BA 24485</span> • 
+                <span className="text-primary font-semibold">CRO BA 24485</span> • 
                 Cirurgiã-Dentista Especialista em Estética Facial
               </p>
             </div>
