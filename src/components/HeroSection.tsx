@@ -40,7 +40,7 @@ const HeroSection = () => {
             <div className="pt-4 border-t border-border">
               <p className="text-sm text-muted-foreground font-medium">
                 <span className="text-primary font-semibold">CRO BA 24485</span> • 
-                Cirurgiã-Dentista Especialista em Estética Facial
+                Cirurgiã-Dentista
               </p>
             </div>
           </div>
