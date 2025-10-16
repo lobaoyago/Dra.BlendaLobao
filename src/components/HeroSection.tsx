@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, MessageCircle } from "lucide-react";
 import blendaHero from "@/assets/blenda-hero-new.jpg";
+import blendaHeroMobile from "@/assets/blenda-hero-mobile.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 
-          src={blendaHero} 
+          src={blendaHero}
+          srcSet={`${blendaHeroMobile} 800w, ${blendaHero} 1920w`}
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw"
           alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" 
           className="w-full h-full object-cover object-center sm:object-[60%] md:object-[55%] lg:object-[50%]"
           loading="eager"
