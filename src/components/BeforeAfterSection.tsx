@@ -80,8 +80,7 @@ const BeforeAfterSection = () => {
                 src={isAfter ? currentItem.after : currentItem.before}
                 alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
                 loading="lazy"
-                className="w-full h-full object-cover object-center transition-all duration-500"
-                style={{ objectPosition: 'center 30%' }}
+                className="w-full h-full object-contain transition-all duration-500"
               />
               
               {/* Before/After Label */}
