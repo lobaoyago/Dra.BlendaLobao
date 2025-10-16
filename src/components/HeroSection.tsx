@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, MessageCircle } from "lucide-react";
-import blendaHero from "@/assets/blenda-hero.jpg";
+import blendaHero from "@/assets/blenda-hero-new.jpg";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
@@ -8,11 +8,11 @@ const HeroSection = () => {
         <img 
           src={blendaHero} 
           alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" 
-          className="w-full h-full object-cover object-[75%] sm:object-[65%] md:object-[60%] lg:object-right"
+          className="w-full h-full object-cover object-center sm:object-[60%] md:object-[55%] lg:object-[50%]"
           loading="eager"
         />
-        {/* Dark overlay for text readability - stronger on the left where text is */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+        {/* Dark overlay for text readability - positioned to not cover the doctor */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent sm:from-black/80 sm:via-black/60 md:from-black/75 md:via-black/50"></div>
       </div>
 
       {/* Content */}
