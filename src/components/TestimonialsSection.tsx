@@ -3,16 +3,16 @@ import { Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "Recuperei minha autoestima. A Dra. Blenda me fez enxergar o melhor de mim.",
-      author: "Maria S."
+      text: "Por diversas vezes, acompanhava antes e depois de várias pessoas na internet mas nunca tive aquela vontade real de voltar a me cuidar. Até que, acompanhando Blenda eu senti que precisava despertar a Jamille antiga, e com ela eu poderia encontrar conforto, segurança no procedimento e coragem para dar o primeiro passo. Eu só tenho uma coisa a dizer, conheçam o trabalho dessa mulher. Obrigada por fazer esse reencontro lindo na melhor fase da minha vida.",
+      author: "Jamille Alves"
     },
     {
-      text: "Natural, leve e exatamente como eu queria. Atendimento impecável.",
-      author: "Juliana R."
+      text: "Você deixou exatamente como eu sonhava: natural, delicado e do meu jeito. Até minha mãe, que morre de medo dessas coisas, disse que ficou lindo! Obrigada pelo atendimento incrível, pela paciência e por explicar cada detalhe com tanto cuidado, algo tão raro hoje em dia. Você arrasa!",
+      author: "Victoria Santiago"
     },
     {
-      text: "Finalmente me sinto confiante ao tirar fotos. Resultado incrível!",
-      author: "Carolina M."
+      text: "Fiquei extremamente satisfeito com a minha experiência na clínica! O profissionalismo foi notável, desde o primeiro contato até o final do procedimento, o que me deu muita segurança. O resultado ficou incrível e natural, superando todas as minhas expectativas!",
+      author: "Dermeval Camara"
     }
   ];
 
