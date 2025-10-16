@@ -10,6 +10,7 @@ const HeroSection = () => {
           alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" 
           className="w-full h-full object-cover object-center sm:object-[60%] md:object-[55%] lg:object-[50%]"
           loading="eager"
+          fetchPriority="high"
         />
         {/* Dark overlay for text readability - positioned to not cover the doctor */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent sm:from-black/80 sm:via-black/60 md:from-black/75 md:via-black/50"></div>
