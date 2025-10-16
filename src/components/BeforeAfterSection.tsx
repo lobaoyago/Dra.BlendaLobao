@@ -5,8 +5,6 @@ import before1 from "@/assets/before-harmonizacao-nova.png";
 import after1 from "@/assets/after-harmonizacao-nova.png";
 import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
-import before3 from "@/assets/before-3.jpg";
-import after3 from "@/assets/after-3.jpg";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
 
@@ -22,12 +20,6 @@ const beforeAfterData = [
     after: after2,
     title: "Definição de Contorno Facial",
     description: "Bioestimulador de colágeno e contorno mandibular",
-  },
-  {
-    before: before3,
-    after: after3,
-    title: "Preenchimento Labial Natural",
-    description: "Ácido hialurônico para volume e definição",
   },
   {
     before: beforePerfiloplastia,
