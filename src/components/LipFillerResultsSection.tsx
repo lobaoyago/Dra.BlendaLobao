@@ -1,20 +1,22 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import lipFiller1 from "@/assets/lip-filler-1.png";
+import lipFiller2 from "@/assets/lip-filler-2.png";
+import lipFiller3 from "@/assets/lip-filler-3.png";
 
-// Placeholder images - replace with actual lip filler result photos
 const lipFillerResults = [
   {
-    image: "/placeholder.svg",
+    image: lipFiller1,
     title: "Preenchimento Labial Natural",
     description: "Volume e definição com ácido hialurônico",
   },
   {
-    image: "/placeholder.svg",
+    image: lipFiller2,
     title: "Harmonização Labial Completa",
     description: "Contorno e projeção labial",
   },
   {
-    image: "/placeholder.svg",
+    image: lipFiller3,
     title: "Lábios Naturais com Volume",
     description: "Resultado sutil e elegante",
   },
