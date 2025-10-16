@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import before1 from "@/assets/before-harmonizacao-completa.jpg";
-import after1 from "@/assets/after-1.jpg";
+import before1 from "@/assets/before-harmonizacao-nova.png";
+import after1 from "@/assets/after-harmonizacao-nova.png";
 import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import before3 from "@/assets/before-3.jpg";
@@ -72,7 +72,7 @@ const BeforeAfterSection = () => {
                 src={isAfter ? currentItem.after : currentItem.before}
                 alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
                 className={`w-full h-full object-cover transition-all duration-500 ${
-                  currentIndex === 0 && !isAfter ? "object-[50%_20%]" : ""
+                  currentIndex === 0 ? "object-[50%_35%]" : ""
                 }`}
               />
               
