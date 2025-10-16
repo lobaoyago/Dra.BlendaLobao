@@ -71,7 +71,9 @@ const BeforeAfterSection = () => {
               <img
                 src={isAfter ? currentItem.after : currentItem.before}
                 alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
-                className="w-full h-full object-cover transition-all duration-500"
+                className={`w-full h-full object-cover transition-all duration-500 ${
+                  currentIndex === 0 && !isAfter ? "object-[50%_20%]" : ""
+                }`}
               />
               
               {/* Before/After Label */}
