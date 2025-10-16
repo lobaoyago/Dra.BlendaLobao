@@ -27,6 +27,12 @@ const beforeAfterData = [
     title: "Preenchimento Labial Natural",
     description: "Ácido hialurônico para volume e definição",
   },
+  {
+    before: before2,
+    after: after2,
+    title: "Perfiloplastia",
+    description: "Rinoplastia e mentoplastia para harmonização do perfil facial",
+  },
 ];
 
 const BeforeAfterSection = () => {
