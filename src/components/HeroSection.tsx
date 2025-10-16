@@ -11,7 +11,7 @@ const HeroSection = () => {
           srcSet={`${blendaHeroMobile} 800w, ${blendaHero} 1920w`}
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw"
           alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" 
-          className="w-full h-full object-cover object-center sm:object-[60%] md:object-[55%] lg:object-[50%]"
+          className="w-full h-full object-cover object-[50%_25%] sm:object-[60%_25%] md:object-[55%_25%] lg:object-[50%_25%]"
           loading="eager"
           fetchPriority="high"
         />
