@@ -3,7 +3,7 @@ import { Quote } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      text: "Por diversas vezes, acompanhava antes e depois de várias pessoas na internet mas nunca tive aquela vontade real de voltar a me cuidar. Até que, acompanhando Blenda eu senti que precisava despertar a Jamille antiga, e com ela eu poderia encontrar conforto, segurança no procedimento e coragem para dar o primeiro passo. Eu só tenho uma coisa a dizer, conheçam o trabalho dessa mulher. Obrigada por fazer esse reencontro lindo na melhor fase da minha vida.",
+      text: "Por diversas vezes, acompanhava antes e depois de várias pessoas na internet mas nunca tive aquela vontade real de voltar a me cuidar. Até que, acompanhando Blenda eu senti que precisava despertar a Jamille antiga, e com ela eu poderei encontrar conforto, segurança no procedimento e coragem para dar o primeiro passo. Eu só tenho uma coisa a dizer, conheçam o trabalho dessa mulher. Obrigada por fazer esse reencontro lindo na melhor fase da minha vida.",
       author: "Jamille Alves"
     },
     {
@@ -17,6 +17,14 @@ const TestimonialsSection = () => {
     {
       text: "Fazer a harmonização com você foi um divisor de águas pra mim. Eu tinha medo de ficar diferente demais, mas você entendeu exatamente o que eu queria, o resultado ficou super natural, do jeitinho que eu sonhava. Além de todo o cuidado e profissionalismo, o que mais me marcou foi o carinho com que você faz o seu trabalho. Dá pra sentir que você coloca amor em cada detalhe. Hoje me sinto mais confiante, mais leve e com a autoestima lá em cima. Obrigada por realçar o que eu já tinha de bonito e me fazer sentir ainda mais eu.",
       author: "Rafaella Souza"
+    },
+    {
+      text: "Eu estava adiando a decisão de fazer o procedimento por receio de perder minhas características. Mas a sua abordagem foi incrivelmente atenciosa, e o plano que traçamos respeitou totalmente a minha individualidade. O resultado é sutil, mas fez uma diferença enorme! Sinto que rejuvenesci de uma forma natural e elegante. Agradeço muito pela sua sensibilidade e excelência técnica. Recomendo de olhos fechados!",
+      author: "Quitéria Capim"
+    },
+    {
+      text: "Desde a primeira consulta, senti a segurança de que estava nas mãos certas. Sua honestidade e transparência sobre o que era possível alcançar me tranquilizaram. Não houve exageros, apenas a valorização dos meus melhores traços. As pessoas notam que estou com um 'ar' melhor, mas não conseguem dizer o que mudou, e isso para mim é a prova de um trabalho perfeito. Estou radiante e muito grata por me fazer sentir a minha melhor versão!",
+      author: "Ana Paula C."
     }
   ];
 
