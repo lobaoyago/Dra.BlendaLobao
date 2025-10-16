@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, MessageCircle } from "lucide-react";
-import blendaImage1 from "@/assets/blenda-1.jpg";
-import blendaImage2 from "@/assets/blenda-2.jpg";
+import blendaHero from "@/assets/blenda-hero.jpg";
 const HeroSection = () => {
   return <section className="relative bg-gradient-hero min-h-screen flex items-center overflow-hidden">
       <div className="container mx-auto px-4 py-8 sm:py-12 md:py-20">
-        <div className="grid md:grid-cols-5 gap-6 sm:gap-8 md:gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-16 lg:gap-20 items-center">
           {/* Text Content */}
-          <div className="md:col-span-2 space-y-6 sm:space-y-8 animate-fade-in">
+          <div className="space-y-6 sm:space-y-8 animate-fade-in order-2 md:order-1">
             <div className="space-y-4 sm:space-y-6">
               <div className="space-y-2 sm:space-y-3">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-primary leading-tight tracking-tight">
@@ -46,40 +45,28 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Images Grid */}
-          <div className="md:col-span-3 relative animate-scale-in">
+          {/* Hero Image */}
+          <div className="relative animate-scale-in order-1 md:order-2">
             <div className="relative">
-              {/* Two Images Side by Side */}
-              <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6">
-                {/* Image 1 */}
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant aspect-[3/4]">
+              {/* Main Image - Large and Prominent */}
+              <div className="relative rounded-3xl md:rounded-[2rem] overflow-hidden shadow-elegant">
+                <div className="aspect-[3/4] md:aspect-[4/5]">
                   <img 
-                    src={blendaImage1} 
-                    alt="Dra. Blenda Lobão - Cirurgiã-dentista" 
+                    src={blendaHero} 
+                    alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" 
                     className="w-full h-full object-cover object-center"
                     loading="eager"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent"></div>
-                </div>
-                
-                {/* Image 2 */}
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-elegant aspect-[3/4]">
-                  <img 
-                    src={blendaImage2} 
-                    alt="Dra. Blenda Lobão - Especialista em estética facial" 
-                    className="w-full h-full object-cover object-center"
-                    loading="eager"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent"></div>
                 </div>
               </div>
               
               {/* Decorative Frame */}
-              <div className="absolute -inset-2 sm:-inset-4 border-2 border-primary/20 rounded-2xl sm:rounded-3xl -z-10"></div>
+              <div className="absolute -inset-3 sm:-inset-4 md:-inset-6 border-2 border-primary/30 rounded-3xl md:rounded-[2.5rem] -z-10"></div>
               
-              {/* Decorative Elements */}
-              <div className="absolute -top-4 sm:-top-6 -right-4 sm:-right-6 w-24 h-24 sm:w-32 sm:h-32 bg-primary/10 rounded-full blur-3xl"></div>
-              <div className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 w-28 h-28 sm:w-40 sm:h-40 bg-accent/20 rounded-full blur-3xl"></div>
+              {/* Decorative Elements - More Vibrant */}
+              <div className="absolute -top-6 -right-6 md:-top-8 md:-right-8 w-32 h-32 md:w-48 md:h-48 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
+              <div className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 w-40 h-40 md:w-56 md:h-56 bg-accent/30 rounded-full blur-3xl"></div>
             </div>
           </div>
         </div>

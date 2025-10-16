@@ -20,11 +20,11 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 25 25% 15%;
 
-    /* Primary - Sophisticated Red (More Vivid) */
-    --primary: 0 85% 55%;
+    /* Primary - Sophisticated Red (More Vivid & Vibrant) */
+    --primary: 0 88% 58%;
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 0 90% 50%;
-    --primary-light: 0 85% 65%;
+    --primary-hover: 0 92% 52%;
+    --primary-light: 0 90% 68%;
 
     /* Secondary - Deep Burgundy */
     --secondary: 0 45% 35%;
@@ -34,10 +34,10 @@ All colors MUST be HSL.
     --muted: 35 30% 92%;
     --muted-foreground: 25 20% 40%;
 
-    /* Accent - Warm Rose/Coral */
-    --accent: 350 80% 65%;
+    /* Accent - Warm Rose/Coral (More Vibrant) */
+    --accent: 350 85% 62%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 350 70% 75%;
+    --accent-light: 350 82% 72%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
@@ -51,17 +51,17 @@ All colors MUST be HSL.
     /* Border Radius */
     --radius: 0.75rem;
 
-    /* Custom Design Tokens - Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(350 80% 65%) 100%);
+    /* Custom Design Tokens - Gradients (More Vibrant) */
+    --gradient-primary: linear-gradient(135deg, hsl(0 88% 58%) 0%, hsl(350 85% 62%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(35 40% 96%) 0%, hsl(35 30% 98%) 100%);
     --gradient-warm: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(35 40% 96%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(350 80% 65%) 0%, hsl(0 72% 51%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(350 85% 62%) 0%, hsl(0 88% 58%) 100%);
     --gradient-soft: linear-gradient(180deg, hsl(35 30% 98%) 0%, hsl(0 0% 100%) 100%);
     
-    /* Shadows */
-    --shadow-elegant: 0 10px 40px -10px hsl(0 72% 51% / 0.15);
+    /* Shadows (Updated with new vibrant colors) */
+    --shadow-elegant: 0 10px 40px -10px hsl(0 88% 58% / 0.18);
     --shadow-soft: 0 4px 20px -4px hsl(0 45% 35% / 0.08);
-    --shadow-glow: 0 0 40px hsl(350 80% 65% / 0.2);
+    --shadow-glow: 0 0 40px hsl(350 85% 62% / 0.25);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
