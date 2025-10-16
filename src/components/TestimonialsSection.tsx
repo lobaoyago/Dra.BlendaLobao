@@ -13,6 +13,10 @@ const TestimonialsSection = () => {
     {
       text: "Fiquei extremamente satisfeito com a minha experiência na clínica! O profissionalismo foi notável, desde o primeiro contato até o final do procedimento, o que me deu muita segurança. O resultado ficou incrível e natural, superando todas as minhas expectativas!",
       author: "Dermeval Camara"
+    },
+    {
+      text: "Fazer a harmonização com você foi um divisor de águas pra mim. Eu tinha medo de ficar diferente demais, mas você entendeu exatamente o que eu queria, o resultado ficou super natural, do jeitinho que eu sonhava. Além de todo o cuidado e profissionalismo, o que mais me marcou foi o carinho com que você faz o seu trabalho. Dá pra sentir que você coloca amor em cada detalhe. Hoje me sinto mais confiante, mais leve e com a autoestima lá em cima. Obrigada por realçar o que eu já tinha de bonito e me fazer sentir ainda mais eu.",
+      author: "Rafaella Souza"
     }
   ];
 
