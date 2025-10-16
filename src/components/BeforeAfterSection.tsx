@@ -7,6 +7,8 @@ import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import before3 from "@/assets/before-3.jpg";
 import after3 from "@/assets/after-3.jpg";
+import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
+import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
 
 const beforeAfterData = [
   {
@@ -28,8 +30,8 @@ const beforeAfterData = [
     description: "Ácido hialurônico para volume e definição",
   },
   {
-    before: before2,
-    after: after2,
+    before: beforePerfiloplastia,
+    after: afterPerfiloplastia,
     title: "Perfiloplastia",
     description: "Rinoplastia e mentoplastia para harmonização do perfil facial",
   },
