@@ -8,11 +8,11 @@ const HeroSection = () => {
         <img 
           src={blendaHero} 
           alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" 
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-cover object-[75%] sm:object-[65%] md:object-[60%] lg:object-right"
           loading="eager"
         />
-        {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30"></div>
+        {/* Dark overlay for text readability - stronger on the left where text is */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
       </div>
 
       {/* Content */}
