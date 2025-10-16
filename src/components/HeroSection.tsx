@@ -57,16 +57,15 @@ const HeroSection = () => {
                     className="w-full h-full object-cover object-center"
                     loading="eager"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent"></div>
                 </div>
               </div>
               
               {/* Decorative Frame */}
-              <div className="absolute -inset-3 sm:-inset-4 md:-inset-6 border-2 border-primary/30 rounded-3xl md:rounded-[2.5rem] -z-10"></div>
+              <div className="absolute -inset-3 sm:-inset-4 md:-inset-6 border-2 border-primary/30 rounded-3xl md:rounded-[2.5rem] pointer-events-none" style={{ zIndex: -1 }}></div>
               
               {/* Decorative Elements - More Vibrant */}
-              <div className="absolute -top-6 -right-6 md:-top-8 md:-right-8 w-32 h-32 md:w-48 md:h-48 bg-primary/20 rounded-full blur-3xl animate-pulse"></div>
-              <div className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 w-40 h-40 md:w-56 md:h-56 bg-accent/30 rounded-full blur-3xl"></div>
+              <div className="absolute -top-8 -right-8 md:-top-12 md:-right-12 w-32 h-32 md:w-48 md:h-48 bg-primary/20 rounded-full blur-3xl animate-pulse pointer-events-none" style={{ zIndex: -2 }}></div>
+              <div className="absolute -bottom-8 -left-8 md:-bottom-12 md:-left-12 w-40 h-40 md:w-56 md:h-56 bg-accent/30 rounded-full blur-3xl pointer-events-none" style={{ zIndex: -2 }}></div>
             </div>
           </div>
         </div>
