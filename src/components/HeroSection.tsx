@@ -6,15 +6,7 @@ const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src={blendaHero}
-          srcSet={`${blendaHeroMobile} 800w, ${blendaHero} 1920w`}
-          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw"
-          alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" 
-          className="w-full h-full object-cover object-[50%_25%] sm:object-[60%_25%] md:object-[55%_25%] lg:object-[50%_25%]"
-          loading="eager"
-          fetchPriority="high"
-        />
+        <img src={blendaHero} srcSet={`${blendaHeroMobile} 800w, ${blendaHero} 1920w`} sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw" alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" className="w-full h-full object-cover object-[50%_25%] sm:object-[60%_25%] md:object-[55%_25%] lg:object-[50%_25%]" loading="eager" fetchPriority="high" />
         {/* Dark overlay for text readability - positioned to not cover the doctor */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent sm:from-black/80 sm:via-black/60 md:from-black/75 md:via-black/50"></div>
       </div>
@@ -30,9 +22,7 @@ const HeroSection = () => {
                 </h1>
                 <div className="h-1 w-24 sm:w-32 bg-primary rounded-full"></div>
               </div>
-              <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light leading-relaxed">
-                Atendimento humanizado e resultados naturais que realçam a sua beleza com harmonia e segurança.
-              </p>
+              <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light leading-relaxed">Atendimento especializado e resultados naturais que realçam a sua beleza com harmonia e segurança.</p>
             </div>
 
             {/* CTAs */}
