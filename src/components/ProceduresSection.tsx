@@ -25,7 +25,7 @@ const ProceduresSection = () => {
     {
       icon: Zap,
       title: "Microagulhamento",
-      description: "Estímulo da regeneração celular para luminosidade e textura impecável"
+      description: "Entrega de ativos para melhoria da qualidade de pele, tratamento de manchas e estimulo de colágeno."
     },
     {
       icon: Wind,
