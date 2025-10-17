@@ -20,7 +20,7 @@ const ProceduresSection = () => {
     {
       icon: Syringe,
       title: "Toxina Botulínica",
-      description: "Full Face, tratamento de bruxismo e técnica Nefertiti para suavização e harmonia"
+      description: "(Botox ) Melhora das linhas de expressão, prevenção de envelhecimento e correção de assimetrias."
     },
     {
       icon: Zap,
