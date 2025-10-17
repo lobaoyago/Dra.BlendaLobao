@@ -20,7 +20,7 @@ const TestimonialsSection = () => {
     },
     {
       text: "Eu estava adiando a decisão de fazer o procedimento por receio de perder minhas características. Mas a sua abordagem foi incrivelmente atenciosa, e o plano que traçamos respeitou totalmente a minha individualidade. O resultado é sutil, mas fez uma diferença enorme! Sinto que rejuvenesci de uma forma natural e elegante. Agradeço muito pela sua sensibilidade e excelência técnica. Recomendo de olhos fechados!",
-      author: "Quitéria Capim"
+      author: "Quitéria Pimentel"
     },
     {
       text: "Desde a primeira consulta, senti a segurança de que estava nas mãos certas. Sua honestidade e transparência sobre o que era possível alcançar me tranquilizaram. Não houve exageros, apenas a valorização dos meus melhores traços. As pessoas notam que estou com um 'ar' melhor, mas não conseguem dizer o que mudou, e isso para mim é a prova de um trabalho perfeito. Estou radiante e muito grata por me fazer sentir a minha melhor versão!",
