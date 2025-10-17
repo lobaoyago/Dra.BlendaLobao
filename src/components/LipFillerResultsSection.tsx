@@ -3,6 +3,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import lipFiller1 from "@/assets/lip-filler-1.png";
 import lipFiller2 from "@/assets/lip-filler-2.png";
 import lipFiller3 from "@/assets/lip-filler-3.png";
+import lipFiller4 from "@/assets/lip-filler-4.png";
 
 const lipFillerResults = [
   {
@@ -19,6 +20,11 @@ const lipFillerResults = [
     image: lipFiller3,
     title: "Lábios Naturais com Volume",
     description: "Resultado sutil e elegante",
+  },
+  {
+    image: lipFiller4,
+    title: "Preenchimento Labial com Definição",
+    description: "Volume equilibrado e contorno marcado",
   },
 ];
 
