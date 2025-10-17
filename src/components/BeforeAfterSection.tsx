@@ -3,10 +3,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import before1 from "@/assets/before-harmonizacao-nova.png";
 import after1 from "@/assets/after-harmonizacao-nova.png";
-import before2 from "@/assets/before-2.jpg";
-import after2 from "@/assets/after-2.jpg";
-import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
-import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
+import beforeCompleta from "@/assets/before-harmonizacao-completa.jpg";
+import afterCompleta from "@/assets/after-harmonizacao-completa.jpg";
 import beforeMasculina from "@/assets/before-harmonizacao-masculina.png";
 import afterMasculina from "@/assets/after-harmonizacao-masculina.png";
 
@@ -18,10 +16,10 @@ const beforeAfterData = [
     description: "Preenchimento com ácido hialurônico e toxina botulínica",
   },
   {
-    before: before1,
-    after: after1,
+    before: beforeCompleta,
+    after: afterCompleta,
     title: "Harmonização Facial Completa Feminina",
-    description: "Preenchimento com ácido hialurônico e toxina botulínica",
+    description: "Preenchimento labial e definição de contorno facial",
   },
   {
     before: beforeMasculina,
