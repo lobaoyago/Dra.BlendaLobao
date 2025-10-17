@@ -30,7 +30,7 @@ const ProceduresSection = () => {
     {
       icon: Wind,
       title: "Lipo de Papada Enzimática",
-      description: "Contorno facial definido e leve, sem cirurgia"
+      description: "Realça o contorno facial sem cirurgias."
     }
   ];
 
