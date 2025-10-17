@@ -7,6 +7,8 @@ import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
+import beforeMasculina from "@/assets/before-harmonizacao-masculina.png";
+import afterMasculina from "@/assets/after-harmonizacao-masculina.png";
 
 const beforeAfterData = [
   {
@@ -34,14 +36,14 @@ const beforeAfterData = [
     description: "Rinoplastia e mentoplastia para harmonização do perfil facial",
   },
   {
-    before: before1,
-    after: after1,
+    before: beforeMasculina,
+    after: afterMasculina,
     title: "Harmonização Facial Completa Masculina",
     description: "Preenchimento com ácido hialurônico e definição de contorno",
   },
   {
-    before: before1,
-    after: after1,
+    before: beforeMasculina,
+    after: afterMasculina,
     title: "Harmonização Facial Completa Masculina",
     description: "Bioestimulador de colágeno e contorno mandibular",
   },
