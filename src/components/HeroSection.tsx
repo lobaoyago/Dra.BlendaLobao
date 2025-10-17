@@ -2,11 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Instagram, MessageCircle } from "lucide-react";
 import blendaHero from "@/assets/blenda-hero-new.jpg";
 import blendaHeroMobile from "@/assets/blenda-hero-mobile.jpg";
+import blendaHeroWebP from "@/assets/blenda-hero-new.webp";
+import blendaHeroMobileWebP from "@/assets/blenda-hero-mobile.webp";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <img src={blendaHero} srcSet={`${blendaHeroMobile} 800w, ${blendaHero} 1920w`} sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw" alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" className="w-full h-full object-cover object-[50%_25%] sm:object-[60%_25%] md:object-[55%_25%] lg:object-[50%_25%]" loading="eager" fetchPriority="high" />
+        <picture>
+          <source srcSet={`${blendaHeroMobileWebP} 800w, ${blendaHeroWebP} 1920w`} sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw" type="image/webp" />
+          <img src={blendaHero} srcSet={`${blendaHeroMobile} 800w, ${blendaHero} 1920w`} sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 60vw" alt="Dra. Blenda Lobão - Cirurgiã-dentista especialista em harmonização orofacial" className="w-full h-full object-cover object-[50%_25%] sm:object-[60%_25%] md:object-[55%_25%] lg:object-[50%_25%]" loading="eager" fetchPriority="high" />
+        </picture>
         {/* Dark overlay for text readability - positioned to not cover the doctor */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/70 to-transparent sm:from-black/80 sm:via-black/60 md:from-black/75 md:via-black/50"></div>
       </div>
