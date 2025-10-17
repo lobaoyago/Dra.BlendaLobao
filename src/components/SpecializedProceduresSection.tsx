@@ -2,6 +2,7 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import before2 from "@/assets/before-2.jpg";
+import before2WebP from "@/assets/before-2.webp";
 import after2 from "@/assets/after-2.jpg";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
@@ -9,6 +10,7 @@ import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
 const proceduresData = [
   {
     before: before2,
+    beforeWebP: before2WebP,
     after: after2,
     title: "Definição de Contorno Facial",
     description: "Bioestimulador de colágeno e contorno mandibular",
@@ -60,12 +62,17 @@ const SpecializedProceduresSection = () => {
           <div className="relative">
             {/* Main Image Display */}
             <div className="relative aspect-square md:aspect-video rounded-2xl overflow-hidden shadow-elegant bg-card">
-              <img
-                src={isAfter ? currentItem.after : currentItem.before}
-                alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
-                loading="lazy"
-                className="w-full h-full object-contain transition-all duration-500"
-              />
+              <picture>
+                {currentItem.beforeWebP && !isAfter && (
+                  <source srcSet={currentItem.beforeWebP} type="image/webp" />
+                )}
+                <img
+                  src={isAfter ? currentItem.after : currentItem.before}
+                  alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
+                  loading="lazy"
+                  className="w-full h-full object-contain transition-all duration-500"
+                />
+              </picture>
               
               {/* Before/After Label */}
               <div className="absolute top-4 left-4 px-4 py-2 bg-background/90 backdrop-blur-sm rounded-full shadow-soft">
