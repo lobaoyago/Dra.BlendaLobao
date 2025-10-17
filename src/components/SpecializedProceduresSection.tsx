@@ -47,11 +47,11 @@ const SpecializedProceduresSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Procedimentos{" "}
-            <span className="text-primary">Especializados</span>
+            Resultados Naturais e{" "}
+            <span className="text-primary">Transformadores</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Resultados excepcionais em procedimentos avançados de harmonização facial
+            Cada resultado é único, porque cada rosto conta uma história diferente
           </p>
         </div>
 

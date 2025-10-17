@@ -63,11 +63,11 @@ const BeforeAfterSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Resultados Naturais e{" "}
-            <span className="text-primary">Transformadores</span>
+            Procedimentos{" "}
+            <span className="text-primary">Especializados</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cada resultado é único, porque cada rosto conta uma história diferente
+            Resultados excepcionais em procedimentos avançados de harmonização facial
           </p>
         </div>
 
