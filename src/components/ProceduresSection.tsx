@@ -20,7 +20,7 @@ const ProceduresSection = () => {
     {
       icon: Syringe,
       title: "Toxina Botulínica",
-      description: "(Botox ) Melhora das linhas de expressão, prevenção de envelhecimento e correção de assimetrias."
+      description: "Melhora das linhas de expressão, prevenção de envelhecimento e correção de assimetrias."
     },
     {
       icon: Zap,
