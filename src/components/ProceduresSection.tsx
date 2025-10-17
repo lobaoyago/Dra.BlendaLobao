@@ -10,7 +10,7 @@ const ProceduresSection = () => {
     {
       icon: Sparkles,
       title: "Bioestimulador de Colágeno",
-      description: "Firmeza e rejuvenescimento natural que devolve a vitalidade da pele"
+      description: "Trata a flacidez e alcança resultados rejuvenescedores, com firmeza e melhora da qualidade de pele."
     },
     {
       icon: Scissors,
