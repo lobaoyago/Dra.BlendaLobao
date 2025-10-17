@@ -27,12 +27,6 @@ const beforeAfterData = [
     title: "Harmonização Facial Completa Masculina",
     description: "Preenchimento com ácido hialurônico e definição de contorno",
   },
-  {
-    before: beforeMasculina,
-    after: afterMasculina,
-    title: "Harmonização Facial Completa Masculina",
-    description: "Bioestimulador de colágeno e contorno mandibular",
-  },
 ];
 
 const BeforeAfterSection = () => {
