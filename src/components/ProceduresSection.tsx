@@ -15,7 +15,7 @@ const ProceduresSection = () => {
     {
       icon: Scissors,
       title: "Fios de PDO",
-      description: "Sustentação e definição facial com Fox Eyes, Lifting e estímulo de colágeno"
+      description: "Estimulo de colágeno, lifting facial e fox eyes com um procedimento minimamente invasivo."
     },
     {
       icon: Syringe,
