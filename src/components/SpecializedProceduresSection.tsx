@@ -1,73 +1,57 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import before1 from "@/assets/before-harmonizacao-nova.png";
-import after1 from "@/assets/after-harmonizacao-nova.png";
 import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
-import beforeMasculina from "@/assets/before-harmonizacao-masculina.png";
-import afterMasculina from "@/assets/after-harmonizacao-masculina.png";
 
-const beforeAfterData = [
+const proceduresData = [
   {
-    before: before1,
-    after: after1,
-    title: "Harmonização Facial Completa Feminina",
-    description: "Preenchimento com ácido hialurônico e toxina botulínica",
-  },
-  {
-    before: before1,
-    after: after1,
-    title: "Harmonização Facial Completa Feminina",
-    description: "Preenchimento com ácido hialurônico e toxina botulínica",
-  },
-  {
-    before: beforeMasculina,
-    after: afterMasculina,
-    title: "Harmonização Facial Completa Masculina",
-    description: "Preenchimento com ácido hialurônico e definição de contorno",
-  },
-  {
-    before: beforeMasculina,
-    after: afterMasculina,
-    title: "Harmonização Facial Completa Masculina",
+    before: before2,
+    after: after2,
+    title: "Definição de Contorno Facial",
     description: "Bioestimulador de colágeno e contorno mandibular",
+  },
+  {
+    before: beforePerfiloplastia,
+    after: afterPerfiloplastia,
+    title: "Perfiloplastia",
+    description: "Rinoplastia e mentoplastia para harmonização do perfil facial",
   },
 ];
 
-const BeforeAfterSection = () => {
+const SpecializedProceduresSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAfter, setIsAfter] = useState(false);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % beforeAfterData.length);
+    setCurrentIndex((prev) => (prev + 1) % proceduresData.length);
     setIsAfter(false);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + beforeAfterData.length) % beforeAfterData.length);
+    setCurrentIndex((prev) => (prev - 1 + proceduresData.length) % proceduresData.length);
     setIsAfter(false);
   };
 
-  const currentItem = beforeAfterData[currentIndex];
+  const currentItem = proceduresData[currentIndex];
 
   return (
-    <section className="py-20 bg-gradient-warm relative overflow-hidden">
+    <section className="py-20 bg-background relative overflow-hidden">
       {/* Decorative Elements */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Resultados Naturais e{" "}
-            <span className="text-primary">Transformadores</span>
+            Procedimentos{" "}
+            <span className="text-primary">Especializados</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Cada resultado é único, porque cada rosto conta uma história diferente
+            Resultados excepcionais em procedimentos avançados de harmonização facial
           </p>
         </div>
 
@@ -130,7 +114,7 @@ const BeforeAfterSection = () => {
 
           {/* Dots Navigation */}
           <div className="flex justify-center gap-2 mt-8">
-            {beforeAfterData.map((_, index) => (
+            {proceduresData.map((_, index) => (
               <button
                 key={index}
                 onClick={() => {
@@ -160,4 +144,4 @@ const BeforeAfterSection = () => {
   );
 };
 
-export default BeforeAfterSection;
+export default SpecializedProceduresSection;
