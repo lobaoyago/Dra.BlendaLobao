@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import before1 from "@/assets/before-harmonizacao-nova.png";
 import before1WebP from "@/assets/before-harmonizacao-nova.webp";
 import after1 from "@/assets/after-harmonizacao-nova.png";
-import beforeCompleta from "@/assets/before-harmonizacao-completa.jpg";
-import afterCompleta from "@/assets/after-harmonizacao-completa.jpg";
+import before2 from "@/assets/before-2.jpg";
+import before2WebP from "@/assets/before-2.webp";
+import after2 from "@/assets/after-2.jpg";
 import beforeMasculina from "@/assets/before-harmonizacao-masculina.png";
 import afterMasculina from "@/assets/after-harmonizacao-masculina.png";
 
@@ -18,8 +19,9 @@ const beforeAfterData = [
     description: "Preenchimento com ácido hialurônico e toxina botulínica",
   },
   {
-    before: beforeCompleta,
-    after: afterCompleta,
+    before: before2,
+    beforeWebP: before2WebP,
+    after: after2,
     title: "Harmonização Facial Completa Feminina",
     description: "Preenchimento labial e definição de contorno facial",
   },

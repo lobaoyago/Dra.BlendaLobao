@@ -1,22 +1,22 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import before2 from "@/assets/before-2.jpg";
-import before2WebP from "@/assets/before-2.webp";
-import after2 from "@/assets/after-2.jpg";
+import beforeCompleta from "@/assets/before-harmonizacao-completa.jpg";
+import afterCompleta from "@/assets/after-harmonizacao-completa.jpg";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
 
 const proceduresData = [
   {
-    before: before2,
-    beforeWebP: before2WebP,
-    after: after2,
+    before: beforeCompleta,
+    beforeWebP: undefined,
+    after: afterCompleta,
     title: "Definição de Contorno Facial",
     description: "Bioestimulador de colágeno e contorno mandibular",
   },
   {
     before: beforePerfiloplastia,
+    beforeWebP: undefined,
     after: afterPerfiloplastia,
     title: "Perfiloplastia",
     description: "Rinoplastia e mentoplastia para harmonização do perfil facial",
