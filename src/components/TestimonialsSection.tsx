@@ -23,8 +23,8 @@ const TestimonialsSection = () => {
       author: "Quitéria Pimentel"
     },
     {
-      text: "Desde a primeira consulta, senti a segurança de que estava nas mãos certas. Sua honestidade e transparência sobre o que era possível alcançar me tranquilizaram. Não houve exageros, apenas a valorização dos meus melhores traços. As pessoas notam que estou com um 'ar' melhor, mas não conseguem dizer o que mudou, e isso para mim é a prova de um trabalho perfeito. Estou radiante e muito grata por me fazer sentir a minha melhor versão!",
-      author: "Ana Paula C."
+      text: "Eu jamais entregaria meu rosto pra ninguém além de você, confio de olhos fechados no seu trabalho! Posso dizer com propriedade que você tem o dom de fazer o que faz, obrigado por todo o carinho e atenção nesse processo!",
+      author: "Lucca Mauad"
     }
   ];
 
