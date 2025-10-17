@@ -12,7 +12,7 @@ const beforeAfterData = [
   {
     before: before1,
     after: after1,
-    title: "Harmonização Facial Completa",
+    title: "Harmonização Facial Completa Feminina",
     description: "Preenchimento com ácido hialurônico e toxina botulínica",
   },
   {
