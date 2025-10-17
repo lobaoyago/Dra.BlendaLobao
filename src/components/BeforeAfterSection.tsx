@@ -16,6 +16,12 @@ const beforeAfterData = [
     description: "Preenchimento com ácido hialurônico e toxina botulínica",
   },
   {
+    before: before1,
+    after: after1,
+    title: "Harmonização Facial Completa Feminina",
+    description: "Preenchimento com ácido hialurônico e toxina botulínica",
+  },
+  {
     before: before2,
     after: after2,
     title: "Definição de Contorno Facial",
@@ -26,6 +32,18 @@ const beforeAfterData = [
     after: afterPerfiloplastia,
     title: "Perfiloplastia",
     description: "Rinoplastia e mentoplastia para harmonização do perfil facial",
+  },
+  {
+    before: before1,
+    after: after1,
+    title: "Harmonização Facial Completa Masculina",
+    description: "Preenchimento com ácido hialurônico e definição de contorno",
+  },
+  {
+    before: before1,
+    after: after1,
+    title: "Harmonização Facial Completa Masculina",
+    description: "Bioestimulador de colágeno e contorno mandibular",
   },
 ];
 
