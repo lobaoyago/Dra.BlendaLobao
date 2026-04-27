@@ -49,6 +49,9 @@ const BeforeAfterSection = () => {
 
   const currentItem = beforeAfterData[currentIndex];
 
+  // Pré-carrega todas as imagens (antes e depois) de todos os slides para evitar atraso ao trocar
+  const preloadImages = beforeAfterData.flatMap((item) => [item.before, item.after]);
+
   return (
     <section className="py-20 bg-gradient-warm relative overflow-hidden">
       {/* Decorative Elements */}
@@ -56,6 +59,13 @@ const BeforeAfterSection = () => {
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* Preload invisível das imagens para troca instantânea */}
+        <div aria-hidden="true" className="hidden">
+          {preloadImages.map((src) => (
+            <img key={src} src={src} alt="" />
+          ))}
+        </div>
+
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
@@ -79,7 +89,8 @@ const BeforeAfterSection = () => {
                 <img
                   src={isAfter ? currentItem.after : currentItem.before}
                   alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                   className="w-full h-full object-contain transition-all duration-500"
                 />
               </picture>

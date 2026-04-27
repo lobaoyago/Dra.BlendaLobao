@@ -39,6 +39,9 @@ const SpecializedProceduresSection = () => {
 
   const currentItem = proceduresData[currentIndex];
 
+  // Pré-carrega todas as imagens (antes e depois) para troca instantânea
+  const preloadImages = proceduresData.flatMap((item) => [item.before, item.after]);
+
   return (
     <section className="py-20 bg-background relative overflow-hidden">
       {/* Decorative Elements */}
@@ -46,6 +49,13 @@ const SpecializedProceduresSection = () => {
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* Preload invisível das imagens */}
+        <div aria-hidden="true" className="hidden">
+          {preloadImages.map((src) => (
+            <img key={src} src={src} alt="" />
+          ))}
+        </div>
+
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
@@ -69,7 +79,8 @@ const SpecializedProceduresSection = () => {
                 <img
                   src={isAfter ? currentItem.after : currentItem.before}
                   alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                   className="w-full h-full object-contain transition-all duration-500"
                 />
               </picture>
