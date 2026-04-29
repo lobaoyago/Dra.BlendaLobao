@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import lipFiller1 from "@/assets/lip-filler-1.jpg";
 import lipFiller2 from "@/assets/lip-filler-2.jpg";
@@ -30,6 +30,14 @@ const lipFillerResults = [
 
 const LipFillerResultsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Preload todas as imagens do carrossel para transições instantâneas
+  useEffect(() => {
+    lipFillerResults.forEach((item) => {
+      const img = new Image();
+      img.src = item.image;
+    });
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % lipFillerResults.length);
@@ -67,7 +75,9 @@ const LipFillerResultsSection = () => {
               <img
                 src={currentItem.image}
                 alt={currentItem.title}
-                loading="lazy"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
                 className="w-full h-full object-contain transition-all duration-500"
               />
               
