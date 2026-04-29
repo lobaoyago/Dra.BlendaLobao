@@ -1,26 +1,22 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import before1 from "@/assets/before-harmonizacao-nova.png";
-import before1WebP from "@/assets/before-harmonizacao-nova.webp";
-import after1 from "@/assets/after-harmonizacao-nova.png";
+import before1 from "@/assets/before-harmonizacao-nova.jpg";
+import after1 from "@/assets/after-harmonizacao-nova.jpg";
 import before2 from "@/assets/before-2.jpg";
-import before2WebP from "@/assets/before-2.webp";
 import after2 from "@/assets/after-2.jpg";
-import beforeMasculina from "@/assets/before-harmonizacao-masculina.png";
-import afterMasculina from "@/assets/after-harmonizacao-masculina.png";
+import beforeMasculina from "@/assets/before-harmonizacao-masculina.jpg";
+import afterMasculina from "@/assets/after-harmonizacao-masculina.jpg";
 
 const beforeAfterData = [
   {
     before: before1,
-    beforeWebP: before1WebP,
     after: after1,
     title: "Harmonização Facial Completa Feminina",
     description: "Preenchimento com ácido hialurônico e toxina botulínica",
   },
   {
     before: before2,
-    beforeWebP: before2WebP,
     after: after2,
     title: "Harmonização Facial Completa Feminina",
     description: "Preenchimento labial e definição de contorno facial",
@@ -82,18 +78,14 @@ const BeforeAfterSection = () => {
           <div className="relative">
             {/* Main Image Display */}
             <div className="relative aspect-square md:aspect-video rounded-2xl overflow-hidden shadow-elegant bg-card">
-              <picture>
-                {currentItem.beforeWebP && !isAfter && (
-                  <source srcSet={currentItem.beforeWebP} type="image/webp" />
-                )}
-                <img
-                  src={isAfter ? currentItem.after : currentItem.before}
-                  alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
-                  loading="eager"
-                  decoding="async"
-                  className="w-full h-full object-contain transition-all duration-500"
-                />
-              </picture>
+              <img
+                src={isAfter ? currentItem.after : currentItem.before}
+                alt={isAfter ? "Depois do procedimento" : "Antes do procedimento"}
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+                className="w-full h-full object-contain transition-all duration-500"
+              />
               
               {/* Before/After Label */}
               <div className="absolute top-4 left-4 px-4 py-2 bg-background/90 backdrop-blur-sm rounded-full shadow-soft">
