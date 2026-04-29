@@ -3,8 +3,8 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import beforeCompleta from "@/assets/before-harmonizacao-completa.jpg";
 import afterCompleta from "@/assets/after-harmonizacao-completa.jpg";
-import beforePerfiloplastia from "@/assets/before-perfiloplastia.png";
-import afterPerfiloplastia from "@/assets/after-perfiloplastia.png";
+import beforePerfiloplastia from "@/assets/before-perfiloplastia.jpg";
+import afterPerfiloplastia from "@/assets/after-perfiloplastia.jpg";
 
 const proceduresData = [
   {

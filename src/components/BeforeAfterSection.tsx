@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import before1 from "@/assets/before-harmonizacao-nova.png";
+import before1 from "@/assets/before-harmonizacao-nova.jpg";
 import before1WebP from "@/assets/before-harmonizacao-nova.webp";
-import after1 from "@/assets/after-harmonizacao-nova.png";
+import after1 from "@/assets/after-harmonizacao-nova.jpg";
 import before2 from "@/assets/before-2.jpg";
 import before2WebP from "@/assets/before-2.webp";
 import after2 from "@/assets/after-2.jpg";
-import beforeMasculina from "@/assets/before-harmonizacao-masculina.png";
-import afterMasculina from "@/assets/after-harmonizacao-masculina.png";
+import beforeMasculina from "@/assets/before-harmonizacao-masculina.jpg";
+import afterMasculina from "@/assets/after-harmonizacao-masculina.jpg";
 
 const beforeAfterData = [
   {

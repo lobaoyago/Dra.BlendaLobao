@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import lipFiller1 from "@/assets/lip-filler-1.png";
-import lipFiller2 from "@/assets/lip-filler-2.png";
-import lipFiller3 from "@/assets/lip-filler-3.png";
-import lipFiller4 from "@/assets/lip-filler-4.png";
+import lipFiller1 from "@/assets/lip-filler-1.jpg";
+import lipFiller2 from "@/assets/lip-filler-2.jpg";
+import lipFiller3 from "@/assets/lip-filler-3.jpg";
+import lipFiller4 from "@/assets/lip-filler-4.jpg";
 
 const lipFillerResults = [
   {
