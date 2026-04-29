@@ -23,11 +23,11 @@ const HeroSection = () => {
             <div className="space-y-4 sm:space-y-6">
               <div className="space-y-2 sm:space-y-3">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-tight tracking-tight">
-                  Dra Blenda Lobão
+                   Dra. Blenda Lobão
                 </h1>
                 <div className="h-1 w-24 sm:w-32 bg-primary rounded-full"></div>
               </div>
-              <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light leading-relaxed">Atendimento especializado e resultados naturais que realçam a sua beleza com harmonia e segurança.</p>
+               <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light leading-relaxed">Atendimento especializado e resultados  que realçam a sua beleza com harmonia e segurança.</p>
             </div>
 
             {/* CTAs */}

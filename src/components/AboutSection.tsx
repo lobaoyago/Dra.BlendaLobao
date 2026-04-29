@@ -10,7 +10,7 @@ const AboutSection = () => {
     {
       icon: Sparkles,
       title: "Resultados naturais e elegantes",
-      description: "Harmonia facial que realça sua beleza natural"
+               description: "Harmonia facial que realça sua beleza "
     },
     {
       icon: Shield,
@@ -33,11 +33,11 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-secondary mb-6">
               Sobre a Dra. Blenda Lobão
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Cada rosto conta uma história — meu propósito é realçar a sua beleza natural 
-              e devolver a confiança que vem de dentro. Atendo cada paciente de forma única, 
-              com empatia, técnica e sensibilidade, buscando resultados harmônicos e naturais.
-            </p>
+             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+               Cada rosto conta uma história — meu propósito é realçar a sua beleza  
+               e devolver a confiança que vem de dentro. Atendo cada paciente de forma única, 
+               com empatia, técnica e sensibilidade, buscando resultados harmônicos e naturais.
+             </p>
           </div>
 
           {/* Highlights Grid */}
