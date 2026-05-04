@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Expand } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ImageLightbox from "./ImageLightbox";
 import before1 from "@/assets/before-harmonizacao-nova.jpg";
 import after1 from "@/assets/after-harmonizacao-nova.jpg";
 import before2 from "@/assets/before-2.jpg";
@@ -32,6 +33,7 @@ const beforeAfterData = [
 const BeforeAfterSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAfter, setIsAfter] = useState(false);
+  const [zoom, setZoom] = useState(false);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % beforeAfterData.length);
@@ -84,7 +86,8 @@ const BeforeAfterSection = () => {
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
-                className="w-full h-full object-contain transition-all duration-500"
+                onClick={() => setZoom(true)}
+                className="w-full h-full object-contain transition-all duration-500 cursor-zoom-in"
               />
               
               {/* Before/After Label */}
@@ -93,6 +96,14 @@ const BeforeAfterSection = () => {
                   {isAfter ? "Depois" : "Antes"}
                 </span>
               </div>
+
+              <button
+                onClick={() => setZoom(true)}
+                aria-label="Ver em tela cheia"
+                className="absolute top-4 right-4 w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              >
+                <Expand className="w-5 h-5 text-foreground" />
+              </button>
 
               {/* Toggle Button */}
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
@@ -160,6 +171,13 @@ const BeforeAfterSection = () => {
           </p>
         </div>
       </div>
+      {zoom && (
+        <ImageLightbox
+          src={isAfter ? currentItem.after : currentItem.before}
+          alt={currentItem.title}
+          onClose={() => setZoom(false)}
+        />
+      )}
     </section>
   );
 };
