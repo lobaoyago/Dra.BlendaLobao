@@ -10,6 +10,8 @@ import beforeMasculina from "@/assets/before-harmonizacao-masculina.jpg";
 import afterMasculina from "@/assets/after-harmonizacao-masculina.jpg";
 import beforeMasculina2 from "@/assets/before-harmonizacao-masculina-2.jpg";
 import afterMasculina2 from "@/assets/after-harmonizacao-masculina-2.jpg";
+import beforeMasculina3 from "@/assets/before-harmonizacao-masculina-3.jpg";
+import afterMasculina3 from "@/assets/after-harmonizacao-masculina-3.jpg";
 
 const beforeAfterData = [
   {
@@ -35,6 +37,12 @@ const beforeAfterData = [
     after: afterMasculina2,
     title: "Harmonização Facial Completa Masculina",
     description: "Refinamento nasal e harmonização dos terços faciais",
+  },
+  {
+    before: beforeMasculina3,
+    after: afterMasculina3,
+    title: "Harmonização Facial Completa Masculina",
+    description: "Definição de mandíbula e harmonização dos traços masculinos",
   },
 ];
 
