@@ -58,6 +58,13 @@ const LipFillerResultsSection = () => {
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* Preload all carousel images for instant transitions */}
+        <div aria-hidden className="hidden">
+          {lipFillerResults.map((item) => (
+            <img key={item.image} src={item.image} alt="" decoding="async" />
+          ))}
+        </div>
+
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
