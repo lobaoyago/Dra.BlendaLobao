@@ -1,4 +1,4 @@
-import { Droplet, Zap, Scissors, Syringe, Sparkles, Wind } from "lucide-react";
+import { Droplet, Zap, Scissors, Syringe, Sparkles, Wind, Layers, Leaf, Cpu } from "lucide-react";
 
 const ProceduresSection = () => {
   const procedures = [
@@ -31,6 +31,21 @@ const ProceduresSection = () => {
       icon: Wind,
       title: "Lipo de Papada Enzimática",
       description: "Realça o contorno facial sem cirurgias."
+    },
+    {
+      icon: Leaf,
+      title: "Mesoterapia",
+      description: "Aplicação de ativos diretamente na pele para revitalização, hidratação profunda e melhora da firmeza."
+    },
+    {
+      icon: Layers,
+      title: "Peeling",
+      description: "Renovação celular para tratar manchas, cicatrizes e melhorar a textura e luminosidade da pele."
+    },
+    {
+      icon: Cpu,
+      title: "Tecnologias",
+      description: "Equipamentos de última geração para rejuvenescimento, firmeza e tratamentos faciais avançados."
     }
   ];
 
