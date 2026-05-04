@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, Expand } from "lucide-react";
+import ImageLightbox from "./ImageLightbox";
 import lipFiller1 from "@/assets/lip-filler-1.jpg";
 import lipFiller2 from "@/assets/lip-filler-2.jpg";
 import lipFiller3 from "@/assets/lip-filler-3.jpg";
@@ -30,6 +31,7 @@ const lipFillerResults = [
 
 const LipFillerResultsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [zoom, setZoom] = useState(false);
 
   // Preload todas as imagens do carrossel para transições instantâneas
   useEffect(() => {
@@ -71,14 +73,15 @@ const LipFillerResultsSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Main Image Display */}
-            <div className="relative aspect-square md:aspect-video rounded-2xl overflow-hidden shadow-elegant bg-card">
+            <div className="relative aspect-square md:aspect-video rounded-2xl overflow-hidden shadow-elegant bg-card group">
               <img
                 src={currentItem.image}
                 alt={currentItem.title}
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
-                className="w-full h-full object-contain transition-all duration-500"
+                onClick={() => setZoom(true)}
+                className="w-full h-full object-contain transition-all duration-500 cursor-zoom-in"
               />
               
               {/* Result Label */}
@@ -87,6 +90,13 @@ const LipFillerResultsSection = () => {
                   Resultado
                 </span>
               </div>
+              <button
+                onClick={() => setZoom(true)}
+                aria-label="Ver em tela cheia"
+                className="absolute top-4 right-4 w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              >
+                <Expand className="w-5 h-5 text-foreground" />
+              </button>
             </div>
 
             {/* Navigation Arrows */}
@@ -139,6 +149,13 @@ const LipFillerResultsSection = () => {
           </p>
         </div>
       </div>
+      {zoom && (
+        <ImageLightbox
+          src={currentItem.image}
+          alt={currentItem.title}
+          onClose={() => setZoom(false)}
+        />
+      )}
     </section>
   );
 };
