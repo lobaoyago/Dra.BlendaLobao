@@ -4,6 +4,7 @@ import ProceduresSection from "@/components/ProceduresSection";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import SpecializedProceduresSection from "@/components/SpecializedProceduresSection";
 import LipFillerResultsSection from "@/components/LipFillerResultsSection";
+import FeaturedCaseSection from "@/components/FeaturedCaseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ const Index = () => {
       <BeforeAfterSection />
       <SpecializedProceduresSection />
       <LipFillerResultsSection />
+      <FeaturedCaseSection />
       <TestimonialsSection />
       <CTASection />
       <Footer />
