@@ -1,10 +1,7 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Expand, Sparkles } from "lucide-react";
+import { ChevronLeft, ChevronRight, Expand } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ImageLightbox from "./ImageLightbox";
-import dianaBefore from "@/assets/diana-1.jpg";
-import dianaAfter from "@/assets/diana-2.jpg";
-import dianaFollowUp from "@/assets/diana-3.jpg";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.jpg";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.jpg";
 import beforePerfiloplastia2 from "@/assets/before-perfiloplastia-2.jpg";
@@ -20,20 +17,6 @@ type Procedure = {
 };
 
 const proceduresData: Procedure[] = [
-  {
-    stages: [
-      { src: dianaBefore, label: "Antes" },
-      { src: dianaAfter, label: "Depois" },
-      { src: dianaFollowUp, label: "Acompanhamento" },
-    ],
-    title: "Harmonização Facial — Caso Diana",
-    description:
-      "Refinamento dos traços com preenchimento e bioestimulador. Acompanhamento meses após o procedimento mostra a evolução natural do resultado.",
-    highlight: {
-      badge: "Caso com Acompanhamento",
-      note: "A última foto foi feita meses após o procedimento, evidenciando a naturalidade e a longevidade do resultado.",
-    },
-  },
   {
     stages: [
       { src: beforePerfiloplastia, label: "Antes" },
