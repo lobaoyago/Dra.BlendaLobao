@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, Expand } from "lucide-react";
+import { ChevronLeft, ChevronRight, Expand, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ImageLightbox from "./ImageLightbox";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.jpg";
