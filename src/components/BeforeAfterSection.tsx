@@ -8,6 +8,8 @@ import before2 from "@/assets/before-2.jpg";
 import after2 from "@/assets/after-2.jpg";
 import beforeMasculina from "@/assets/before-harmonizacao-masculina.jpg";
 import afterMasculina from "@/assets/after-harmonizacao-masculina.jpg";
+import beforeMasculina2 from "@/assets/before-harmonizacao-masculina-2.jpg";
+import afterMasculina2 from "@/assets/after-harmonizacao-masculina-2.jpg";
 
 const beforeAfterData = [
   {
@@ -27,6 +29,12 @@ const beforeAfterData = [
     after: afterMasculina,
     title: "Harmonização Facial Completa Masculina",
     description: "Preenchimento com ácido hialurônico e definição de contorno",
+  },
+  {
+    before: beforeMasculina2,
+    after: afterMasculina2,
+    title: "Harmonização Facial Completa Masculina",
+    description: "Refinamento nasal e harmonização dos terços faciais",
   },
 ];
 
