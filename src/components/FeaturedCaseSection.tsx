@@ -129,11 +129,7 @@ const FeaturedCaseSection = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Rinomodelação para refinamento nasal</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                  <span>Bioestimulador de colágeno facial</span>
+                  <span>Botox para correção de assimetria</span>
                 </li>
               </ul>
             </div>
