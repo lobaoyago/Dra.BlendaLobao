@@ -6,6 +6,8 @@ import beforeCompleta from "@/assets/before-harmonizacao-completa.jpg";
 import afterCompleta from "@/assets/after-harmonizacao-completa.jpg";
 import beforePerfiloplastia from "@/assets/before-perfiloplastia.jpg";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.jpg";
+import beforePerfiloplastia2 from "@/assets/before-perfiloplastia-2.jpg";
+import afterPerfiloplastia2 from "@/assets/after-perfiloplastia-2.jpg";
 
 const proceduresData = [
   {
@@ -21,6 +23,13 @@ const proceduresData = [
     after: afterPerfiloplastia,
     title: "Perfiloplastia",
     description: "Rinoplastia e mentoplastia para harmonização do perfil facial",
+  },
+  {
+    before: beforePerfiloplastia2,
+    beforeWebP: undefined,
+    after: afterPerfiloplastia2,
+    title: "Perfiloplastia",
+    description: "Harmonização do perfil masculino com definição de mandíbula e mento",
   },
 ];
 
