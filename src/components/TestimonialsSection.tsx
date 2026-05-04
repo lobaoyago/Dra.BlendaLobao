@@ -19,10 +19,6 @@ const TestimonialsSection = () => {
       author: "Rafaella Souza"
     },
     {
-      text: "Eu estava adiando a decisão de fazer o procedimento por receio de perder minhas características. Mas a sua abordagem foi incrivelmente atenciosa, e o plano que traçamos respeitou totalmente a minha individualidade. O resultado é sutil, mas fez uma diferença enorme! Sinto que rejuvenesci de uma forma natural e elegante. Agradeço muito pela sua sensibilidade e excelência técnica. Recomendo de olhos fechados!",
-      author: "Quitéria Pimentel"
-    },
-    {
       text: "Eu jamais entregaria meu rosto pra ninguém além de você, confio de olhos fechados no seu trabalho! Posso dizer com propriedade que você tem o dom de fazer o que faz, obrigado por todo o carinho e atenção nesse processo!",
       author: "Lucca Mauad"
     }
