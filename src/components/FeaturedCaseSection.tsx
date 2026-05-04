@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { Sparkles, Award, ChevronLeft, ChevronRight } from "lucide-react";
+import { Sparkles, Award, ChevronLeft, ChevronRight, Expand } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ImageLightbox from "./ImageLightbox";
 import pizane1 from "@/assets/pizane-1.jpg";
 import pizane2 from "@/assets/pizane-2.jpg";
 import pizane3 from "@/assets/pizane-3.jpg";
@@ -13,6 +14,7 @@ const views = [
 
 const FeaturedCaseSection = () => {
   const [index, setIndex] = useState(0);
+  const [zoom, setZoom] = useState(false);
   const current = views[index];
 
   const next = () => setIndex((i) => (i + 1) % views.length);
@@ -56,18 +58,26 @@ const FeaturedCaseSection = () => {
                 alt={`Lucas Pizane - ${current.label} - antes e depois`}
                 loading="eager"
                 decoding="async"
-                className="w-full h-full object-contain transition-all duration-500"
+                onClick={() => setZoom(true)}
+                className="w-full h-full object-contain transition-all duration-500 cursor-zoom-in"
               />
               <div className="absolute top-4 left-4 px-4 py-2 bg-background/90 backdrop-blur-sm rounded-full shadow-soft">
                 <span className="text-sm font-semibold text-foreground">
                   {current.label}
                 </span>
               </div>
-              <div className="absolute top-4 right-4 px-4 py-2 bg-primary text-primary-foreground rounded-full shadow-soft">
+              <div className="absolute bottom-4 right-4 px-4 py-2 bg-primary text-primary-foreground rounded-full shadow-soft">
                 <span className="text-xs font-bold uppercase tracking-wider">
                   Antes • Depois
                 </span>
               </div>
+              <button
+                onClick={() => setZoom(true)}
+                aria-label="Ver em tela cheia"
+                className="absolute top-4 right-4 w-10 h-10 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              >
+                <Expand className="w-5 h-5 text-foreground" />
+              </button>
             </div>
 
             <button
@@ -150,6 +160,13 @@ const FeaturedCaseSection = () => {
           </div>
         </div>
       </div>
+      {zoom && (
+        <ImageLightbox
+          src={current.src}
+          alt={`Lucas Pizane - ${current.label}`}
+          onClose={() => setZoom(false)}
+        />
+      )}
     </section>
   );
 };
