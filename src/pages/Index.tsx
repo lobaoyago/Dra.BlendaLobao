@@ -3,6 +3,7 @@ import AboutSection from "@/components/AboutSection";
 import ProceduresSection from "@/components/ProceduresSection";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import SpecializedProceduresSection from "@/components/SpecializedProceduresSection";
+import FollowUpCasesSection from "@/components/FollowUpCasesSection";
 import LipFillerResultsSection from "@/components/LipFillerResultsSection";
 import FeaturedCaseSection from "@/components/FeaturedCaseSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -18,6 +19,7 @@ const Index = () => {
       <FeaturedCaseSection />
       <BeforeAfterSection />
       <SpecializedProceduresSection />
+      <FollowUpCasesSection />
       <LipFillerResultsSection />
       <TestimonialsSection />
       <CTASection />
