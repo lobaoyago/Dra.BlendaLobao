@@ -21,6 +21,18 @@ const TestimonialsSection = () => {
     {
       text: "Eu jamais entregaria meu rosto pra ninguém além de você, confio de olhos fechados no seu trabalho! Posso dizer com propriedade que você tem o dom de fazer o que faz, obrigado por todo o carinho e atenção nesse processo!",
       author: "Lucca Mauad"
+    },
+    {
+      text: "Tive a melhor experiência do mundo com a Dra. Blenda. Ela é extremamente atenciosa, te ouve com atenção, mas mais do que isso, te explica tudo desde o início. Ela te faz entender realmente o procedimento que você pretende fazer e te explica exatamente como e para o que serve. Além disso, é muito honesta com o olhar técnico dela para falar o que ela não mexeria e o que ela não aconselharia fazer. Foi uma verdadeira aula. Senti muita confiança desde o começo, os procedimentos foram feitos de forma super indolor e o suporte no pós é incrível! Ela e a equipe dão todo o suporte, mandam mensagem pra saber como você está e realmente se preocupam. Hoje sou completamente apaixonada pelo meu rostinho e mal posso esperar para voltar! Foi uma escolha muito especial e bem feita. Recomendo de olhos fechados!",
+      author: "Renata Ferrari"
+    },
+    {
+      text: "Dra. Blenda, eu PRECISO dizer: estou simplesmente apaixonada pelo resultado da minha harmonização! Mesmo com o rostinho ainda um pouquinho inchado, já sinto toda a diferença. Minha autoestima foi lá pra cima, minha confiança tá brilhando e, pra completar, ainda fez um MILAGRE 🙌🏼 🤣 levantou meu olho de peixe morto kkkkkk que até minha visão melhorou! Obrigada por todo o carinho, cuidado, paciência e atenção comigo. Você não é só uma médica maravilhosa… é oficialmente responsável pela minha nova fase, e face!! E já vou avisando: não te largo nunca mais! Se prepareeee, porque agora você ganhou uma cliente grudada igual glitter no carnaval!",
+      author: "Ianara Tissian"
+    },
+    {
+      text: "Blenda foi incrível e superou todas as minhas expectativas. Sempre tive muito receio de procedimentos estéticos, especialmente no rosto. Mas o meu sorriso gengival me incomodava bastante e queria uma solução para isso. Blenda resolveu não somente o meu sorriso… fez muito mais ao meu rosto! Realçando minha beleza natural de forma sútil e delicada, respeitando meus traços. Indico de olhos fechados e com certeza retornarei.",
+      author: "Lorena Luduvice"
     }
   ];
 
