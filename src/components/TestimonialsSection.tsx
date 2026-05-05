@@ -49,13 +49,14 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {/* Testimonials Scrollable Container */}
+        <div className="max-h-[500px] overflow-y-auto pr-2 max-w-6xl mx-auto scrollbar-thin scrollbar-thumb-primary/30 scrollbar-track-transparent">
+        <div className="grid md:grid-cols-2 gap-6">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-card rounded-xl p-8 shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in relative"
-              style={{ animationDelay: `${index * 150}ms` }}
+              className="bg-card rounded-xl p-6 shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in relative"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <Quote className="h-10 w-10 text-primary/20 mb-4" />
               <p className="text-foreground leading-relaxed mb-6 italic">
@@ -66,6 +67,7 @@ const TestimonialsSection = () => {
               </p>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </section>
