@@ -146,7 +146,7 @@ const FeaturedCaseSection = () => {
 
             <Button asChild variant="hero" size="lg" className="w-full">
               <a
-                href="https://wa.me/5571999999999"
+                href="https://wa.me/5571999850764"
                 target="_blank"
                 rel="noopener noreferrer"
               >
