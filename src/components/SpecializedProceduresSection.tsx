@@ -6,6 +6,8 @@ import beforePerfiloplastia from "@/assets/before-perfiloplastia.jpg";
 import afterPerfiloplastia from "@/assets/after-perfiloplastia.jpg";
 import beforePerfiloplastia2 from "@/assets/before-perfiloplastia-2.jpg";
 import afterPerfiloplastia2 from "@/assets/after-perfiloplastia-2.jpg";
+import beforePerfiloplastia3 from "@/assets/before-perfiloplastia-3.jpg";
+import afterPerfiloplastia3 from "@/assets/after-perfiloplastia-3.jpg";
 
 type Stage = { src: string; label: string };
 
@@ -32,6 +34,14 @@ const proceduresData: Procedure[] = [
     ],
     title: "Perfiloplastia",
     description: "Harmonização do perfil masculino com definição de mandíbula e mento",
+  },
+  {
+    stages: [
+      { src: beforePerfiloplastia3, label: "Antes" },
+      { src: afterPerfiloplastia3, label: "Depois" },
+    ],
+    title: "Perfiloplastia",
+    description: "Harmonização do perfil masculino com refinamento nasal e projeção do mento",
   },
 ];
 
