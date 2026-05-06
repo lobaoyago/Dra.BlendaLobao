@@ -15,8 +15,8 @@ const Index = () => {
     <main className="min-h-screen font-sans">
       <HeroSection />
       <AboutSection />
-      <ProceduresSection />
       <FeaturedCaseSection />
+      <ProceduresSection />
       <BeforeAfterSection />
       <FollowUpCasesSection />
       <SpecializedProceduresSection />
