@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Expand } from "lucide-react";
+import { Expand, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ImageLightbox from "./ImageLightbox";
 import beforeRino from "@/assets/before-rinoplastia.jpg";
@@ -58,6 +58,14 @@ const RhinoplastySection = () => {
   const nextStage = () =>
     setStageIndex((s) => (s + 1) % currentItem.stages.length);
 
+  const goToCase = (index: number) => {
+    const total = casesData.length;
+    setCurrentIndex((index + total) % total);
+    setStageIndex(0);
+  };
+  const prevCase = () => goToCase(currentIndex - 1);
+  const nextCase = () => goToCase(currentIndex + 1);
+
   const preloadImages = casesData.flatMap((item) => item.stages.map((s) => s.src));
 
   return (
@@ -106,6 +114,25 @@ const RhinoplastySection = () => {
               <Expand className="w-5 h-5 text-foreground" />
             </button>
 
+            {casesData.length > 1 && (
+              <>
+                <button
+                  onClick={prevCase}
+                  aria-label="Caso anterior"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+                >
+                  <ChevronLeft className="w-6 h-6 text-foreground" />
+                </button>
+                <button
+                  onClick={nextCase}
+                  aria-label="Próximo caso"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 w-11 h-11 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+                >
+                  <ChevronRight className="w-6 h-6 text-foreground" />
+                </button>
+              </>
+            )}
+
             <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
               <Button
                 onClick={nextStage}
@@ -126,14 +153,19 @@ const RhinoplastySection = () => {
           </div>
 
           {casesData.length > 1 && (
-            <div className="flex justify-center gap-2 mt-8">
+            <div className="flex justify-center items-center gap-3 mt-8">
+              <button
+                onClick={prevCase}
+                aria-label="Caso anterior"
+                className="w-9 h-9 rounded-full bg-card border border-border shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              >
+                <ChevronLeft className="w-5 h-5 text-foreground" />
+              </button>
+              <div className="flex items-center gap-2">
               {casesData.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() => {
-                    setCurrentIndex(index);
-                    setStageIndex(0);
-                  }}
+                  onClick={() => goToCase(index)}
                   className={`w-3 h-3 rounded-full transition-all ${
                     index === currentIndex
                       ? "bg-primary w-8"
@@ -142,6 +174,14 @@ const RhinoplastySection = () => {
                   aria-label={`Ir para caso ${index + 1}`}
                 />
               ))}
+              </div>
+              <button
+                onClick={nextCase}
+                aria-label="Próximo caso"
+                className="w-9 h-9 rounded-full bg-card border border-border shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              >
+                <ChevronRight className="w-5 h-5 text-foreground" />
+              </button>
             </div>
           )}
         </div>
