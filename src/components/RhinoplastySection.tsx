@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import ImageLightbox from "./ImageLightbox";
 import beforeRino from "@/assets/before-rinoplastia.jpg";
 import afterRino from "@/assets/after-rinoplastia.jpg";
+import beforeRino2 from "@/assets/before-rinoplastia-2.jpg";
+import afterRino2 from "@/assets/after-rinoplastia-2.jpg";
+import beforeRino3 from "@/assets/before-rinoplastia-3.jpg";
+import afterRino3 from "@/assets/after-rinoplastia-3.jpg";
 
 type Stage = { src: string; label: string };
 
@@ -22,6 +26,24 @@ const casesData: RhinoCase[] = [
     title: "Rinoplastia",
     description:
       "Refinamento do dorso e da ponta nasal com resultado natural e harmônico ao perfil.",
+  },
+  {
+    stages: [
+      { src: beforeRino2, label: "Antes" },
+      { src: afterRino2, label: "Depois" },
+    ],
+    title: "Rinoplastia",
+    description:
+      "Correção do perfil nasal com afinamento da ponta e equilíbrio das proporções faciais.",
+  },
+  {
+    stages: [
+      { src: beforeRino3, label: "Antes" },
+      { src: afterRino3, label: "Depois" },
+    ],
+    title: "Rinoplastia",
+    description:
+      "Harmonização do dorso e projeção da ponta nasal, valorizando os traços naturais.",
   },
 ];
 
