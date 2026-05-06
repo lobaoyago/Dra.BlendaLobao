@@ -153,15 +153,7 @@ const RhinoplastySection = () => {
           </div>
 
           {casesData.length > 1 && (
-            <div className="flex justify-center items-center gap-3 mt-8">
-              <button
-                onClick={prevCase}
-                aria-label="Caso anterior"
-                className="w-9 h-9 rounded-full bg-card border border-border shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
-              >
-                <ChevronLeft className="w-5 h-5 text-foreground" />
-              </button>
-              <div className="flex items-center gap-2">
+            <div className="flex justify-center items-center gap-2 mt-8">
               {casesData.map((_, index) => (
                 <button
                   key={index}
@@ -174,14 +166,6 @@ const RhinoplastySection = () => {
                   aria-label={`Ir para caso ${index + 1}`}
                 />
               ))}
-              </div>
-              <button
-                onClick={nextCase}
-                aria-label="Próximo caso"
-                className="w-9 h-9 rounded-full bg-card border border-border shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
-              >
-                <ChevronRight className="w-5 h-5 text-foreground" />
-              </button>
             </div>
           )}
         </div>
