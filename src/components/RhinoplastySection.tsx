@@ -47,15 +47,6 @@ const casesData: RhinoCase[] = [
     description:
       "Harmonização do dorso e projeção da ponta nasal, valorizando os traços naturais.",
   },
-  {
-    stages: [
-      { src: beforeRino2, label: "Antes" },
-      { src: afterRino2, label: "Depois" },
-    ],
-    title: "Rinoplastia",
-    description:
-      "Correção do perfil nasal com afinamento da ponta e equilíbrio das proporções faciais.",
-  },
 ];
 
 const RhinoplastySection = () => {
