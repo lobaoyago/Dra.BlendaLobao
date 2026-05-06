@@ -25,7 +25,7 @@ const casesData: RhinoCase[] = [
       { src: beforeRino4, label: "Antes" },
       { src: afterRino4, label: "Depois" },
     ],
-    title: "Rinoplastia",
+    title: "Rinomodelação",
     description:
       "Refinamento da ponta nasal com perfil mais suave e harmônico.",
   },
@@ -34,7 +34,7 @@ const casesData: RhinoCase[] = [
       { src: beforeRino, label: "Antes" },
       { src: afterRino, label: "Depois" },
     ],
-    title: "Rinoplastia",
+    title: "Rinomodelação",
     description:
       "Refinamento do dorso e da ponta nasal com resultado natural e harmônico ao perfil.",
   },
@@ -43,7 +43,7 @@ const casesData: RhinoCase[] = [
       { src: beforeRino3, label: "Antes" },
       { src: afterRino3, label: "Depois" },
     ],
-    title: "Rinoplastia",
+    title: "Rinomodelação",
     description:
       "Harmonização do dorso e projeção da ponta nasal, valorizando os traços naturais.",
   },
@@ -84,7 +84,7 @@ const RhinoplastySection = () => {
 
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
-            Rinoplastia <span className="text-primary">Antes e Depois</span>
+            Rinomodelação <span className="text-primary">Antes e Depois</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Resultados naturais com refinamento do perfil nasal
