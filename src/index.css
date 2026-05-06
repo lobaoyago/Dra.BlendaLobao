@@ -26,42 +26,42 @@ All colors MUST be HSL.
     --primary-hover: 359 100% 16%;
     --primary-light: 359 80% 35%;
 
-    /* Secondary - Deep Burgundy */
-    --secondary: 0 45% 35%;
+    /* Secondary - Deep Burgundy harmonizado com #640002 */
+    --secondary: 359 90% 14%;
     --secondary-foreground: 0 0% 100%;
 
     /* Muted - Soft Cream */
     --muted: 35 30% 92%;
     --muted-foreground: 25 20% 40%;
 
-    /* Accent - Warm Rose/Coral (More Vibrant) */
-    --accent: 350 85% 62%;
+    /* Accent - Wine Rose harmonizado com o vermelho profundo */
+    --accent: 358 55% 38%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 350 82% 72%;
+    --accent-light: 358 50% 55%;
 
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Borders & Inputs */
-    --border: 35 20% 88%;
-    --input: 35 20% 88%;
+    /* Borders & Inputs - leve tom quente alinhado ao bordô */
+    --border: 359 25% 85%;
+    --input: 359 25% 85%;
     --ring: 359 100% 20%;
 
     /* Border Radius */
     --radius: 0.75rem;
 
-    /* Custom Design Tokens - Gradients (More Vibrant) */
-    --gradient-primary: linear-gradient(135deg, hsl(359 100% 20%) 0%, hsl(350 85% 62%) 100%);
+    /* Custom Design Tokens - Gradients harmonizados com #640002 */
+    --gradient-primary: linear-gradient(135deg, hsl(359 100% 20%) 0%, hsl(358 80% 32%) 100%);
     --gradient-hero: linear-gradient(135deg, hsl(35 40% 96%) 0%, hsl(35 30% 98%) 100%);
     --gradient-warm: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(35 40% 96%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(350 85% 62%) 0%, hsl(359 100% 20%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(358 55% 38%) 0%, hsl(359 100% 20%) 100%);
     --gradient-soft: linear-gradient(180deg, hsl(35 30% 98%) 0%, hsl(0 0% 100%) 100%);
-    
-    /* Shadows (Updated with new vibrant colors) */
-    --shadow-elegant: 0 10px 40px -10px hsl(359 100% 20% / 0.18);
-    --shadow-soft: 0 4px 20px -4px hsl(0 45% 35% / 0.08);
-    --shadow-glow: 0 0 40px hsl(350 85% 62% / 0.25);
+
+    /* Shadows (tons de bordô profundo) */
+    --shadow-elegant: 0 10px 40px -10px hsl(359 100% 20% / 0.25);
+    --shadow-soft: 0 4px 20px -4px hsl(359 90% 14% / 0.12);
+    --shadow-glow: 0 0 40px hsl(359 100% 20% / 0.3);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
