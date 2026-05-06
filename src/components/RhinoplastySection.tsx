@@ -22,21 +22,21 @@ type RhinoCase = {
 const casesData: RhinoCase[] = [
   {
     stages: [
+      { src: beforeRino4, label: "Antes" },
+      { src: afterRino4, label: "Depois" },
+    ],
+    title: "Rinoplastia",
+    description:
+      "Refinamento da ponta nasal com perfil mais suave e harmônico.",
+  },
+  {
+    stages: [
       { src: beforeRino, label: "Antes" },
       { src: afterRino, label: "Depois" },
     ],
     title: "Rinoplastia",
     description:
       "Refinamento do dorso e da ponta nasal com resultado natural e harmônico ao perfil.",
-  },
-  {
-    stages: [
-      { src: beforeRino2, label: "Antes" },
-      { src: afterRino2, label: "Depois" },
-    ],
-    title: "Rinoplastia",
-    description:
-      "Correção do perfil nasal com afinamento da ponta e equilíbrio das proporções faciais.",
   },
   {
     stages: [
@@ -49,12 +49,12 @@ const casesData: RhinoCase[] = [
   },
   {
     stages: [
-      { src: beforeRino4, label: "Antes" },
-      { src: afterRino4, label: "Depois" },
+      { src: beforeRino2, label: "Antes" },
+      { src: afterRino2, label: "Depois" },
     ],
     title: "Rinoplastia",
     description:
-      "Refinamento da ponta nasal com perfil mais suave e harmônico.",
+      "Correção do perfil nasal com afinamento da ponta e equilíbrio das proporções faciais.",
   },
 ];
 
