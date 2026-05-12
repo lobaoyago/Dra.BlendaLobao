@@ -15,8 +15,8 @@ const Index = () => {
   return (
     <main className="min-h-screen font-sans">
       <HeroSection />
-      <AboutSection />
       <FeaturedCaseSection />
+      <AboutSection />
       <ProceduresSection />
       <BeforeAfterSection />
       <FollowUpCasesSection />
