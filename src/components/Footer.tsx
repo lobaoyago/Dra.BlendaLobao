@@ -1,11 +1,11 @@
 import { Instagram, MapPin, Phone } from "lucide-react";
 const Footer = () => {
-  return <footer className="bg-secondary text-secondary-foreground py-12">
+  return <footer className="bg-secondary text-secondary-foreground py-10 sm:py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="text-2xl font-serif font-bold mb-4">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold mb-3 sm:mb-4">
               Dra. Blenda Lobão
             </h3>
             <p className="text-secondary-foreground/80 text-sm leading-relaxed">Transformando autoestima com naturalidade e cuidado.</p>

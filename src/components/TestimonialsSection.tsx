@@ -37,29 +37,29 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-14 sm:py-20 bg-muted">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-secondary mb-3 sm:mb-4">
             Depoimentos de Pacientes
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-base sm:text-lg text-muted-foreground">
             Histórias reais de transformação e confiança
           </p>
         </div>
 
         {/* Testimonials Scrollable Container */}
         <div className="max-h-[500px] overflow-y-auto pr-2 max-w-6xl mx-auto scrollbar-thin scrollbar-thumb-primary/30 scrollbar-track-transparent">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
           {testimonials.map((testimonial, index) => (
             <div 
               key={index}
-              className="bg-card rounded-xl p-6 shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in relative"
+              className="bg-card rounded-xl p-5 sm:p-6 shadow-soft hover:shadow-elegant transition-all duration-300 animate-fade-in relative"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <Quote className="h-10 w-10 text-primary/20 mb-4" />
-              <p className="text-foreground leading-relaxed mb-6 italic">
+              <Quote className="h-8 w-8 sm:h-10 sm:w-10 text-primary/20 mb-3 sm:mb-4" />
+              <p className="text-sm sm:text-base text-foreground leading-relaxed mb-4 sm:mb-6 italic">
                 "{testimonial.text}"
               </p>
               <p className="text-sm font-semibold text-primary">

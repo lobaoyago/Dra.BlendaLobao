@@ -25,15 +25,15 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-card">
+    <section className="py-14 sm:py-20 bg-card">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-secondary mb-6">
+          <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-secondary mb-4 sm:mb-6">
               Sobre a Dra. Blenda Lobão
             </h2>
-             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+             <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                Cada rosto conta uma história — meu propósito é realçar a sua beleza  
                e devolver a confiança que vem de dentro. Atendo cada paciente de forma única, 
                com empatia, técnica e sensibilidade, buscando resultados harmônicos e naturais.
@@ -41,22 +41,22 @@ const AboutSection = () => {
           </div>
 
           {/* Highlights Grid */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
             {highlights.map((item, index) => (
               <div 
                 key={index}
-                className="bg-gradient-hero rounded-xl p-6 shadow-soft hover:shadow-elegant transition-all duration-300 hover:scale-105 animate-fade-in"
+                className="bg-gradient-hero rounded-xl p-5 sm:p-6 shadow-soft hover:shadow-elegant transition-all duration-300 hover:scale-105 animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="flex items-start gap-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <item.icon className="h-6 w-6 text-primary" />
+                <div className="flex items-start gap-3 sm:gap-4">
+                  <div className="bg-primary/10 p-2.5 sm:p-3 rounded-lg shrink-0">
+                    <item.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">
+                    <h3 className="font-semibold text-foreground mb-1.5 sm:mb-2 text-sm sm:text-base">
                       {item.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       {item.description}
                     </p>
                   </div>
