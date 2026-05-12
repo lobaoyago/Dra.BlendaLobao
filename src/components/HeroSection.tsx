@@ -17,17 +17,17 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 py-20 sm:py-24 md:py-32 relative z-10">
+      <div className="container mx-auto px-4 py-16 sm:py-24 md:py-32 relative z-10">
         <div className="max-w-2xl animate-fade-in">
-          <div className="space-y-6 sm:space-y-8">
-            <div className="space-y-4 sm:space-y-6">
+          <div className="space-y-5 sm:space-y-8">
+            <div className="space-y-3 sm:space-y-6">
               <div className="space-y-2 sm:space-y-3">
-                <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-tight tracking-tight">
+                <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-bold text-white leading-tight tracking-tight">
                    Dra. Blenda Lobão
                 </h1>
-                <div className="h-1 w-24 sm:w-32 bg-primary rounded-full"></div>
+                <div className="h-1 w-20 sm:w-32 bg-primary rounded-full"></div>
               </div>
-               <p className="text-xl sm:text-2xl md:text-3xl text-white/90 font-light leading-relaxed">Atendimento especializado e resultados  que realçam a sua beleza com harmonia e segurança.</p>
+               <p className="text-base sm:text-2xl md:text-3xl text-white/90 font-light leading-relaxed">Atendimento especializado e resultados  que realçam a sua beleza com harmonia e segurança.</p>
             </div>
 
             {/* CTAs */}

@@ -50,32 +50,32 @@ const ProceduresSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-14 sm:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-secondary mb-4">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-secondary mb-3 sm:mb-4">
             Procedimentos e Tratamentos
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Técnicas avançadas para realçar sua beleza natural e devolver sua autoestima
           </p>
         </div>
 
         {/* Procedures Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
           {procedures.map((procedure, index) => (
             <div 
               key={index}
-              className="group bg-card rounded-xl p-6 shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 animate-fade-in border border-border"
+              className="group bg-card rounded-xl p-5 sm:p-6 shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 animate-fade-in border border-border"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="mb-4">
-                <div className="inline-flex p-3 bg-gradient-primary rounded-lg shadow-md group-hover:scale-110 transition-transform">
-                  <procedure.icon className="h-6 w-6 text-primary-foreground" />
+              <div className="mb-3 sm:mb-4">
+                <div className="inline-flex p-2.5 sm:p-3 bg-gradient-primary rounded-lg shadow-md group-hover:scale-110 transition-transform">
+                  <procedure.icon className="h-5 w-5 sm:h-6 sm:w-6 text-primary-foreground" />
                 </div>
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3 font-serif">
+              <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2 sm:mb-3 font-serif">
                 {procedure.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
@@ -86,7 +86,7 @@ const ProceduresSection = () => {
         </div>
 
         {/* Bottom Message */}
-        <div className="text-center mt-12">
+        <div className="text-center mt-10 sm:mt-12">
           <p className="text-muted-foreground italic font-light">
             "Resultados personalizados e naturais — porque cada rosto é único."
           </p>

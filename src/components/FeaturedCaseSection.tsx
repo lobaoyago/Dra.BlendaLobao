@@ -21,7 +21,7 @@ const FeaturedCaseSection = () => {
   const prev = () => setIndex((i) => (i - 1 + views.length) % views.length);
 
   return (
-    <section className="py-20 bg-gradient-soft relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-gradient-soft relative overflow-hidden">
       <div className="absolute top-10 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
 
@@ -33,17 +33,17 @@ const FeaturedCaseSection = () => {
           ))}
         </div>
 
-        <div className="text-center mb-12 animate-fade-in">
+        <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
             <Award className="w-4 h-4 text-primary" />
             <span className="text-sm font-semibold text-primary uppercase tracking-wider">
               Caso Destaque
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
             Lucas Pizane
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Harmonização facial masculina com resultado natural e marcante,
             valorizando os traços individuais do paciente
           </p>
@@ -82,14 +82,14 @@ const FeaturedCaseSection = () => {
 
             <button
               onClick={prev}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
               aria-label="Vista anterior"
             >
               <ChevronLeft className="w-6 h-6 text-foreground" />
             </button>
             <button
               onClick={next}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
               aria-label="Próxima vista"
             >
               <ChevronRight className="w-6 h-6 text-foreground" />

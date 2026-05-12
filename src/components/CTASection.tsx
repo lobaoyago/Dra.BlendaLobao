@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, MessageCircle } from "lucide-react";
 const CTASection = () => {
-  return <section className="py-20 bg-gradient-primary relative overflow-hidden">
+  return <section className="py-14 sm:py-20 bg-gradient-primary relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary-foreground/10 rounded-full blur-3xl"></div>
@@ -9,11 +9,11 @@ const CTASection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center animate-fade-in">
           {/* Headline */}
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary-foreground mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight">
             Seu novo olhar sobre si mesma começa aqui.
           </h2>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 font-light">Agende sua avaliação e descubra como eu posso transformar a sua vida</p>
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-8 sm:mb-10 font-light">Agende sua avaliação e descubra como eu posso transformar a sua vida</p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

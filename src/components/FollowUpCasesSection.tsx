@@ -43,7 +43,7 @@ const FollowUpCasesSection = () => {
   const preloadImages = casesData.flatMap((item) => item.stages.map((s) => s.src));
 
   return (
-    <section className="py-20 bg-gradient-warm relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-gradient-warm relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/10 rounded-full blur-3xl"></div>
 
@@ -54,17 +54,17 @@ const FollowUpCasesSection = () => {
           ))}
         </div>
 
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 bg-primary/10 rounded-full">
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-xs font-semibold tracking-wider uppercase text-primary">
               Acompanhamento de Resultados
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
             Casos <span className="text-primary">Acompanhados</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Resultados que evoluem com o tempo — registros do antes, depois e do acompanhamento meses após o procedimento.
           </p>
         </div>
@@ -117,7 +117,7 @@ const FollowUpCasesSection = () => {
           </div>
 
           <div className="mt-8 text-center animate-fade-in">
-            <h3 className="text-2xl font-serif font-bold text-foreground mb-2">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-foreground mb-2">
               {currentItem.title}
             </h3>
             <p className="text-muted-foreground">{currentItem.description}</p>
