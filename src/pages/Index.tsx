@@ -16,13 +16,13 @@ const Index = () => {
     <main className="min-h-screen font-sans">
       <HeroSection />
       <FeaturedCaseSection />
-      <AboutSection />
-      <ProceduresSection />
       <BeforeAfterSection />
       <FollowUpCasesSection />
       <SpecializedProceduresSection />
       <RhinoplastySection />
       <LipFillerResultsSection />
+      <AboutSection />
+      <ProceduresSection />
       <TestimonialsSection />
       <CTASection />
       <Footer />
