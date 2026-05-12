@@ -80,7 +80,7 @@ const SpecializedProceduresSection = () => {
   const preloadImages = proceduresData.flatMap((item) => item.stages.map((s) => s.src));
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section className="py-14 sm:py-20 bg-background relative overflow-hidden">
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-accent/5 rounded-full blur-3xl"></div>
@@ -94,12 +94,12 @@ const SpecializedProceduresSection = () => {
         </div>
 
         {/* Section Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
+        <div className="text-center mb-10 sm:mb-16 animate-fade-in">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif font-bold text-foreground mb-4">
             Resultados Naturais e{" "}
             <span className="text-primary">Transformadores</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
             Cada resultado é único, porque cada rosto conta uma história diferente
           </p>
         </div>
@@ -177,14 +177,14 @@ const SpecializedProceduresSection = () => {
             {/* Navigation Arrows */}
             <button
               onClick={prevSlide}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
               aria-label="Resultado anterior"
             >
               <ChevronLeft className="w-6 h-6 text-foreground" />
             </button>
             <button
               onClick={nextSlide}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-12 sm:h-12 bg-background/90 backdrop-blur-sm rounded-full shadow-soft hover:shadow-md transition-all hover:scale-110 flex items-center justify-center"
               aria-label="Próximo resultado"
             >
               <ChevronRight className="w-6 h-6 text-foreground" />
@@ -193,7 +193,7 @@ const SpecializedProceduresSection = () => {
 
           {/* Procedure Info */}
           <div className="mt-8 text-center animate-fade-in">
-            <h3 className="text-2xl font-serif font-bold text-foreground mb-2">
+            <h3 className="text-xl sm:text-2xl font-serif font-bold text-foreground mb-2">
               {currentItem.title}
             </h3>
             <p className="text-muted-foreground">{currentItem.description}</p>
@@ -225,7 +225,7 @@ const SpecializedProceduresSection = () => {
         </div>
 
         {/* Bottom Note */}
-        <div className="mt-12 text-center">
+        <div className="mt-10 sm:mt-12 text-center">
           <p className="text-sm text-muted-foreground italic max-w-xl mx-auto">
             "Os resultados podem variar de acordo com as características individuais de cada paciente. 
             Fotos reais de procedimentos realizados pela Dra. Blenda Lobão."
